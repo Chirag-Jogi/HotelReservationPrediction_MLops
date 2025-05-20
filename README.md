@@ -10,7 +10,7 @@ Hotel reservation cancellations can significantly impact revenue and resource pl
 - Enable Targeted Marketing: Focus retention efforts on customers with high cancellation probability
 
 ## Dataset
-The project uses the Hotel Reservations Classification Dataset from Kaggle, which includes booking information and whether the reservation was ultimately canceled.
+The project uses the Hotel Reservations Classification Dataset from Kaggle(https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset), which includes booking information and whether the reservation was ultimately canceled.
 Key Features
 
 - lead_time: Number of days between booking and arrival date
