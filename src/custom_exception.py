@@ -7,20 +7,14 @@ class CustomException(Exception):
         self.error_message=self.get_detailed_error_message(error_message,error_detail)
 
     @staticmethod
-    def get_detailed_error_message(error_message , error_detail=None):
+    def get_detailed_error_message(error_message , error_detail:sys):
 
-       if error_detail is None:
         _ , _ , exc_tb= traceback.sys.exc_info()
-       else:
-        exc_tb=error_detail.__traceback__
+        file_name=exc_tb.tb_frame.f_code.co_filename
+        line_number=exc_tb.tb_lineno
 
-       if exc_tb is None:
-        return error_message 
-       
-       file_name=exc_tb.tb_frame.f_code.co_filename
-       line_number=exc_tb.tb_lineno
-
-       return f"Error in {file_name} ,line {line_number} : {error_message}"
+        return f"Error in {file_name} ,line {line_number} : {error_message}"
     
     def __str__(self):
         return self.error_message
+    
