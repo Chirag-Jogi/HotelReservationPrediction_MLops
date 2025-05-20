@@ -10,7 +10,7 @@ class CustomException(Exception):
     def get_detailed_error_message(error_message , error_detail=None):
 
        if error_detail is None:
-        _ , _ , exc_tb= error_detail.exc_info()
+        _ , _ , exc_tb= traceback.sys.exc_info()
        else:
         exc_tb=error_detail.__traceback__
 
