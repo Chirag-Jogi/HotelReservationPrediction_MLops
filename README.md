@@ -27,50 +27,8 @@ Key Features
 
 ## Project Structure
 
-├── artifacts
-│   └── models
-│       └── lgbm_model.pkl
-├── config
-│   ├── config.yaml
-│   ├── model_params.py
-│   ├── path_config.py
-│   └── __init__.py
-├── logs
-│   ├── log_2025-05-19.log
-│   └── log_2025-05-20.log
-├── mlruns
-├── notebook
-│   └── notebook.ipynb
-├── pipeline
-│   ├── training_pipeline.py
-│   └── __init__.py
-├── processed
-│   ├── processed_test.csv
-│   ├── processed_train.csv
-│   └── raw
-│       ├── raw.csv
-│       ├── test.csv
-│       └── train.csv
-├── src
-│   ├── custom_exception.py
-│   ├── data_ingestion.py
-│   ├── data_preprocessing.py
-│   ├── logger.py
-│   ├── model_training.py
-│   └── __init__.py
-├── static
-│   └── style.css
-├── templates
-│   └── index.html
-├── utils
-│   ├── common_functions.py
-│   └── __init__.py
-├── .gitignore
-├── application.py
-├── Dockerfile
-├── Jenkinsfile
-├── requirements.txt
-└── setup.py
+![Screenshot 2025-05-20 220816](https://github.com/user-attachments/assets/d5f3bc55-6060-455f-b924-59635ae087aa)
+
 
 ## Model Pipeline
 The project implements a complete ML pipeline:
