@@ -25,3 +25,83 @@ Key Features
 - room_type_reserved: Type of room reserved
 - and more ...
 
+## Project Structure
+
+├── artifacts
+│   └── models
+│       └── lgbm_model.pkl
+├── config
+│   ├── config.yaml
+│   ├── model_params.py
+│   ├── path_config.py
+│   └── __init__.py
+├── logs
+│   ├── log_2025-05-19.log
+│   └── log_2025-05-20.log
+├── mlruns
+├── notebook
+│   └── notebook.ipynb
+├── pipeline
+│   ├── training_pipeline.py
+│   └── __init__.py
+├── processed
+│   ├── processed_test.csv
+│   ├── processed_train.csv
+│   └── raw
+│       ├── raw.csv
+│       ├── test.csv
+│       └── train.csv
+├── src
+│   ├── custom_exception.py
+│   ├── data_ingestion.py
+│   ├── data_preprocessing.py
+│   ├── logger.py
+│   ├── model_training.py
+│   └── __init__.py
+├── static
+│   └── style.css
+├── templates
+│   └── index.html
+├── utils
+│   ├── common_functions.py
+│   └── __init__.py
+├── .gitignore
+├── application.py
+├── Dockerfile
+├── Jenkinsfile
+├── requirements.txt
+└── setup.py
+
+## Model Pipeline
+The project implements a complete ML pipeline:
+
+- Data Ingestion (data_ingestion.py): Loads and splits the dataset
+- Data Preprocessing (data_preprocessing.py): Handles missing values, encoding, and feature engineering
+- Model Training (model_training.py): Implements LGBM training with hyperparameter tuning
+- Pipeline Orchestration (training_pipeline.py): Coordinates the end-to-end process
+
+## Model Performance
+- Accuracy87.35%
+- Precision86.08%
+- Recall89.11%
+- F1 Score87.57%
+
+## Key Insights
+
+Lead time is a strong predictor of cancellation probability
+The Booking is high in the winter months Due to which the avg rates price of room are also increased.
+Approx 60% of booking is stake by the couples.Which give the lead about the target customoer are more couples.
+
+## CI/CD Pipeline
+The project includes a Jenkinsfile that enables continuous integration and deployment:
+
+Automated testing
+Model retraining with new data
+Docker image building and deployment
+
+At last the project is deploy on google cloud platform 
+here is the link -:https://ml-project-702319311745.us-central1.run.app/
+
+## Project Docker Hub link
+https://hub.docker.com/r/chiragjogi27/hotel-reservation-prediction
+
