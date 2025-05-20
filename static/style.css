@@ -96,3 +96,18 @@ button:hover {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+@media (max-width: 600px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        grid-column: auto; /* Remove grid-column span for button on mobile */
+    }
+
+    .result {
+        grid-column: auto; /* Remove grid-column span for result on mobile */
+    }
+}
