@@ -68,9 +68,6 @@ pipeline{
                             --region=us-central1
                             --allow-unauthenticated
 
-
-
-
                         '''
                     }
                 }
