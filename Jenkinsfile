@@ -24,7 +24,8 @@ pipeline{
                     . ${VENV_DIR}/bin/activate
                     pip install --upgrade pip
                     pip install setuptools wheel build
-                    pip install -e .
+                    pip install .
+
                     '''
                 }
             }
